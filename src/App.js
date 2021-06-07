@@ -53,11 +53,11 @@ function App() {
       .then(data => {
         setCountry(countryCode);
         setCountryInfo(data);
-        setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+        //setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
         setMapZoom(4);
+        console.log(data);
       })
   }
-  console.log(countryInfo)
   return (
     <div className="app">
       <div className="app__left">

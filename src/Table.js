@@ -5,8 +5,8 @@ const Table = ({countries}) => {
     return (
         <div className="table">
             {
-                countries.map(({country, cases}) => (
-                    <tr>
+                countries.map(({country, cases},index) => (
+                    <tr key={index}>
                         <td>{country}</td>
                         <td><strong>{cases}</strong></td>
                     </tr>
